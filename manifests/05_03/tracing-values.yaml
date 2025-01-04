@@ -1,0 +1,16 @@
+meshConfig:
+  enableTracing: true
+  defaultConfig:
+    tracing: {} # Disable legacy MeshConfig tracing options
+  extensionProviders:
+    - name: jaeger
+      opentelemetry:
+        service: jaeger-collector.istio-system.svc.cluster.local
+        port: 4317
+telemetry:
+  enabled: true
+
+# check how to enable ambient mode in values file 
+# components:
+#   ambient:
+#     enabled: true
