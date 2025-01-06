@@ -1,16 +1,13 @@
 apiVersion: networking.istio.io/v1
 kind: DestinationRule
 metadata:
-  name: httpbin
+  name: reviews
 spec:
-  host: httpbin
+  host: reviews
   trafficPolicy:
     connectionPool:
       tcp:
-        maxConnections: 1
-      http:
-        http1MaxPendingRequests: 1
-        maxRequestsPerConnection: 1
+        maxConnections: 100
     outlierDetection:
       consecutive5xxErrors: 1
       interval: 1s
