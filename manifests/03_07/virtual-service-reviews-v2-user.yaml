@@ -4,12 +4,12 @@ metadata:
   name: reviews
 spec:
   hosts:
-  - reviews
+    - reviews
   http:
   - match:
     - headers:
         end-user:
-          exact: jason
+          exact: jasmine
     route:
     - destination:
         host: reviews
@@ -17,5 +17,4 @@ spec:
   - route:
     - destination:
         host: reviews
-        subset: v3
-
+        subset: v1
