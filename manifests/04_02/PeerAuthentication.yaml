@@ -4,8 +4,5 @@ metadata:
   name: bookinfo-peer-auth
   namespace: bookinfo      
 spec:
-  # selector:
-  #   matchLabels:
-  #     app: reviews
   mtls:
     mode: STRICT
