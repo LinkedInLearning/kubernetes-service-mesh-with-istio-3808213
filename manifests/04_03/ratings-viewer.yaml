@@ -4,9 +4,10 @@ metadata:
   name: ratings-viewer
   namespace: bookinfo
 spec:
-  selector:
-    matchLabels:
-      app: ratings
+  targetRefs:
+  - kind: Service
+    group: ""
+    name: ratings
   action: ALLOW
   rules:
   - from:

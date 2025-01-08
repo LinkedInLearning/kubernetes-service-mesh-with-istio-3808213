@@ -4,17 +4,18 @@ metadata:
   name: productpage-viewer
   namespace: bookinfo
 spec:
-  selector:
-    matchLabels:
-      app: productpage
+  # selector:
+  #   matchLabels:
+  #     app: productpage
   targetRefs:
-  - kind: Gateway
-    group: gateway.networking.k8s.io
-    name: waypoint
+  - kind: Service
+    group: ""
+    name: productpage
   action: ALLOW
   rules:
   - to:
     - operation:
         methods: ["GET"]
+
 
 

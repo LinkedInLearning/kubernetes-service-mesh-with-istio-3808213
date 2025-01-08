@@ -4,9 +4,10 @@ metadata:
   name: reviews-viewer
   namespace: default
 spec:
-  selector:
-    matchLabels:
-      app: reviews
+  targetRefs:
+  - kind: Service
+    group: ""
+    name: reviews
   action: ALLOW
   rules:
   - from:

@@ -4,14 +4,15 @@ metadata:
   name: details-viewer
   namespace: bookinfo
 spec:
-  selector:
-    matchLabels:
-      app: details
+  targetRefs:
+  - kind: Service
+    group: ""
+    name: details
   action: ALLOW
   rules:
   - from:
     - source:
-        principals: ["cluster.local/ns/default/sa/bookinfo-productpage"]
+        principals: ["cluster.local/ns/bookinfo/sa/bookinfo-productpage"]
     to:
     - operation:
         methods: ["GET"]
