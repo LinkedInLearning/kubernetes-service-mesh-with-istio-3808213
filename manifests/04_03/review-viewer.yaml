@@ -1,7 +1,7 @@
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:
-  name: "reviews-viewer"
+  name: reviews-viewer
   namespace: default
 spec:
   selector:
@@ -11,7 +11,7 @@ spec:
   rules:
   - from:
     - source:
-        principals: ["cluster.local/ns/default/sa/bookinfo-productpage"]
+        principals: ["cluster.local/ns/bookinfo/sa/bookinfo-productpage"]
     to:
     - operation:
         methods: ["GET"]

@@ -1,7 +1,7 @@
 apiVersion: security.istio.io/v1
 kind: AuthorizationPolicy
 metadata:
-  name: httpbin
+  name: auth-deny-policy
   namespace: foo
 spec:
   action: DENY
