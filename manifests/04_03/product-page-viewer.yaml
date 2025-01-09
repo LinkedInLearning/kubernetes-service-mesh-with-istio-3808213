@@ -4,9 +4,6 @@ metadata:
   name: productpage-viewer
   namespace: bookinfo
 spec:
-  # selector:
-  #   matchLabels:
-  #     app: productpage
   targetRefs:
   - kind: Service
     group: ""
