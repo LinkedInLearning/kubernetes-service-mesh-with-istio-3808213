@@ -1,7 +1,7 @@
 meshConfig:
   enableTracing: true
   defaultConfig:
-    tracing: {} # Disable legacy MeshConfig tracing options
+    tracing: {} 
   extensionProviders:
     - name: jaeger
       opentelemetry:
