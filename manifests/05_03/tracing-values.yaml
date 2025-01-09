@@ -9,8 +9,3 @@ meshConfig:
         port: 4317
 telemetry:
   enabled: true
-
-# check how to enable ambient mode in values file 
-# components:
-#   ambient:
-#     enabled: true
