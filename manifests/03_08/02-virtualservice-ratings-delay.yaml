@@ -6,10 +6,12 @@ spec:
   hosts:
   - ratings
   http:
-  - route:
+  - fault:
+      delay:
+        percentage:
+          value: 100
+        fixedDelay: 2s
+    route:
     - destination:
         host: ratings
         subset: v1
-    retries:
-      attempts: 3
-      perTryTimeout: 2s
