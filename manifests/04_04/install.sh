@@ -18,6 +18,7 @@ helm ls -n istio-system
 kubectl get pods -n istio-system
 
 # Apply Bookinfo application
+kubectl create ns bookinfo
 kubectl apply -f bookinfo-gateway.yaml -n bookinfo
 kubectl apply -f bookinfo.yaml -n bookinfo
 
