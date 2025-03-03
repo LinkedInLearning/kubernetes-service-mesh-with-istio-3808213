@@ -1,44 +1,28 @@
 # Kubernetes: Service Mesh with Istio
 This is the repository for the LinkedIn Learning course `Kubernetes: Service Mesh with Istio`. The full course is available from [LinkedIn Learning][lil-course-url].
 
-_See the readme file in the main branch for updated instructions and information._
-## Instructions
-This repository has branches for each of the videos in the course. You can use the branch pop up menu in github to switch to a specific branch and take a look at the course at that stage, or you can add `/tree/BRANCH_NAME` to the URL to go to the branch you want to access.
+![lil-thumbnail-url]
 
-## Branches
-The branches are structured to correspond to the videos in the course. The naming convention is `CHAPTER#_MOVIE#`. As an example, the branch named `02_03` corresponds to the second chapter and the third video in that chapter. 
-Some branches will have a beginning and an end state. These are marked with the letters `b` for "beginning" and `e` for "end". The `b` branch contains the code as it is at the beginning of the movie. The `e` branch contains the code as it is at the end of the movie. The `main` branch holds the final state of the code when in the course.
+## Course Description
 
-When switching from one exercise files branch to the next after making changes to the files, you may get a message like this:
-
-    error: Your local changes to the following files would be overwritten by checkout:        [files]
-    Please commit your changes or stash them before you switch branches.
-    Aborting
-
-To resolve this issue:
-	
-    Add changes to git using this command: git add .
-	Commit changes using this command: git commit -m "some message"
-
-## Installing
-1. To use these exercise files, you must have the following installed:
-	- [list of requirements for course]
-2. Clone this repository into your local machine using the terminal (Mac), CMD (Windows), or a GUI tool like SourceTree.
-3. [Course-specific instructions]
+<p>In this course, master the deployment and management of a service mesh using Istio’s new ambient mesh mode within a Kubernetes environment. Bukola Johnson introduces the Istio architecture and key components, then installs and configures Istio on a Kubernetes cluster in ambient mode.</p><p>
+ Learn how ambient mesh simplifies service mesh adoption by removing sidecar proxies while maintaining security, traffic control, and observability Learn to manage microservices traffic with advanced routing rules, secure service-to-service communication with mutual TLS and authorization policies, and utilize observability tools for monitoring and tracing. Hands-on exercises show you how to configure traffic management features like canary releases and fault injection, and optimize Istio for performance, scalability, and security—all without the overhead of sidecars. 
+</p><P>Check out this course to become more adept at deploying a robust service mesh, ensuring the reliability, security, and efficiency of your microservices architecture. </p>
 
 ## Instructor
 
-Instructor name
+Bukola Johnson
 
-Instructor description
+Senior Platform Engineer | Google Women Techmakers Ambassador
+
 
                             
 
-Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/).
+Check out my other courses on [LinkedIn Learning](https://www.linkedin.com/learning/instructors/bukola-johnsonv).
 
 
 [0]: # (Replace these placeholder URLs with actual course URLs)
 
-[lil-course-url]: https://www.linkedin.com/learning/
-[lil-thumbnail-url]: http://
+[lil-course-url]: https://www.linkedin.com/learning/kubernetes-service-mesh-with-istio-25332503
+[lil-thumbnail-url]: https://media.licdn.com/dms/image/v2/D4E0DAQE7rdD8F7dhjw/learning-public-crop_675_1200/B4EZVERJKHHUAY-/0/1740607100372?e=2147483647&v=beta&t=Q5hhezI-gITDIqpZvDRc9gOJo7ABY0v8nPBkvff05zo
 
